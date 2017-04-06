@@ -1,7 +1,17 @@
-import {createStore} from 'redux'
-import {menuReducer} from '../reducers/myprojReducers'
+	import {createStore} from 'redux'
 
 
-const store = createStore(menuReducer)
+
+	// const rootReducer = combineReducers({
+	// 	menuReducer, newsReducer
+	// })
+	// const store = createStore(rootReducer)
+
+	// export default store
+
+import {restaurantReducer} from '../reducers/myprojReducers'
+
+
+const store = createStore(restaurantReducer)
 
 export default store

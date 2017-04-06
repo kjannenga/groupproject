@@ -15,9 +15,9 @@ export default React.createClass({
 		      <div>
 
 
-		      <div class="header"> 
-				<img class="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCbEQZ6R4sXcZ3MXOFHFQc07fx0xAp_cAoMRk0hNqhENR1WL2-" /> 
-			<div class="navBar">
+		      <div className="header"> 
+				<img className="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQCbEQZ6R4sXcZ3MXOFHFQc07fx0xAp_cAoMRk0hNqhENR1WL2-" /> 
+			<div className="navBar">
 				<ul>
 					<li><a href="/">Story</a></li>
 					<li><a href="menu">Menu</a></li>

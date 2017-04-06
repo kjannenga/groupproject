@@ -8,4 +8,16 @@ export function getMenu(){
 			menu: data.data
 		})
 	})
+
+
+}
+
+export function getNews(){
+	axios.get('https://json-data.herokuapp.com/restaurant/news/1').then(news=>{
+		store.dispatch({
+			type: 'GET_NEWS',
+			news: news
+		})
+
+	})
 }
