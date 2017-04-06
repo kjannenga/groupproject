@@ -2,7 +2,7 @@ import React from 'react';
 import {getMenu} from '../api/jsonData';
 import store from '../api/store/myprojStore'
 import menu from './menu.css'
-import news from './news'
+
 
 
 

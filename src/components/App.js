@@ -4,6 +4,7 @@ import story from './story'
 import reservation from './reservation'
 import menu from './menu'
 import news from './news'
+import special from './special'
 
 
 
@@ -23,6 +24,7 @@ export default React.createClass({
 					<li><a href="menu">Menu</a></li>
 					<li><a href="reservation">Reservations</a></li>
 					<li><a href="news">News</a></li>
+					<li><a href="special">Special</a></li>
 				</ul>
 			
 
@@ -30,6 +32,7 @@ export default React.createClass({
 		      <Route path="/menu/" component={menu} />
 		      <Route path="/reservation/" component={reservation} />
 		      <Route path="/news/" component={news} />
+		      <Route path="/special/" component={special} />
 
 		      </div>
 		    

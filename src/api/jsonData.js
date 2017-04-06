@@ -21,3 +21,13 @@ export function getNews(){
 
 	})
 }
+
+export function getSpecial(){
+	axios.get('https://json-data.herokuapp.com/restaurant/special/1').then(special=>{
+		store.dispatch({
+			type: 'GET_SPECIAL',
+			special: special.data
+		})
+
+	})
+}

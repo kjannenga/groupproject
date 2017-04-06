@@ -4,19 +4,19 @@ export default React.createClass({
   render() {
     return (
 		<form>
-			<label for="name">Full Name</label>
+			<label htmlFor="name">Full Name</label>
 			<input type="text" id="name" />
 
-			<label for="number">Number of Guests</label>
+			<label htmlFor="number">Number of Guests</label>
 			<input type="text" id="number" />
 
-			<label for="date">Date</label>
+			<label htmlFor="date">Date</label>
 			<input type="date" id="date" />
 
-			<label for="notes">Special Notes</label>
+			<label htmlFor="notes">Special Notes</label>
 			<textarea id="notes"></textarea>
 
-			<label for="seats">Seating Preference</label>
+			<label htmlFor="seats">Seating Preference</label>
 			<select id="seats">
 			  <option value="indoor">Indoor</option>
 			  <option value="outdoor">Outdoor</option>

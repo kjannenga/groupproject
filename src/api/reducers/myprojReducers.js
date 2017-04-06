@@ -2,7 +2,8 @@ const Initialstate = {
 	appetizers: [],
 	entrees: [],
 	sides: [],
-	news:[]
+	news:[],
+	special:[]
 }
 
 export function restaurantReducer(state = Initialstate, action) {
@@ -17,8 +18,13 @@ export function restaurantReducer(state = Initialstate, action) {
 		return {
 			...state, news: action.news
 		}
+	case 'GET_SPECIAL':
+		return {
+			...state, special: action.special
+		}
 		default:
 			return state
 	}
+
 }
 
