@@ -14,7 +14,6 @@ getInitialState(){
 componentWillMount(){
 		this.unsubscribe = store.subscribe(()=>{
 			const appState = store.getState()
-			console.log(appState, "appState")
 			this.setState({
 				news: appState.news
 			})
@@ -31,8 +30,16 @@ componentWillMount(){
 
 
   render() {
-  	console.log("news", this.state.news)
+  	// console.log("news", this.state.news)
     return (
-    	<div></div>)
+    	<div>
+    	 <div className="news">
+    	 	<p>{this.state.news.title}</p>
+    	 	<p>{this.state.news.post}</p>
+    	 	<p>{this.state.news.date_published}</p>
+                  
+    		</div>
+    	</div>
+    )
   }
 })

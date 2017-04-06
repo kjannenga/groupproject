@@ -16,7 +16,7 @@ export function getNews(){
 	axios.get('https://json-data.herokuapp.com/restaurant/news/1').then(news=>{
 		store.dispatch({
 			type: 'GET_NEWS',
-			news: news
+			news: news.data
 		})
 
 	})

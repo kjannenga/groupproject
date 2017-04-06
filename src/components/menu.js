@@ -2,6 +2,7 @@ import React from 'react';
 import {getMenu} from '../api/jsonData';
 import store from '../api/store/myprojStore'
 import menu from './menu.css'
+import news from './news'
 
 
 
@@ -17,7 +18,6 @@ export default React.createClass({
     componentWillMount(){
         this.unsubscribe = store.subscribe(()=>{
             const appState = store.getState()
-            console.log(appState, "menu")
             this.setState({
                 appetizers:appState.appetizers,
                 entrees:appState.entrees,
