@@ -1,6 +1,6 @@
 import React from 'react';
-import {getNews} from '../api/jsonData';
-import store from '../api/store/myprojStore'
+import {getNews} from '../api/newsJson';
+import store from '../api/store/newsStore'
 
 
 export default React.createClass({
@@ -10,7 +10,6 @@ export default React.createClass({
 			post: [],
 			date_published: []
 		}
-
 	},
 
 	componentWillMount(){
@@ -30,8 +29,16 @@ export default React.createClass({
 	},
 
 	render(){
+		return(
+					<ul>
+						<li>{news.title}</li>
+						<li>{news.post}</li>
+						<li>{news.date_published}</li>
+					</ul>
+					
+					
+					))
+			)
 		
-			
-	)
   }
 })

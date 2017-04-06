@@ -1,4 +1,3 @@
-
 const Initialstate = {
 	appetizers: [],
 	entrees: [],

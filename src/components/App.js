@@ -3,6 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import story from './story'
 import reservation from './reservation'
 import menu from './menu'
+import news from './news'
 
 
 
@@ -21,12 +22,14 @@ export default React.createClass({
 					<li><a href="/">Story</a></li>
 					<li><a href="menu">Menu</a></li>
 					<li><a href="reservation">Reservations</a></li>
+					<li><a href="news">News</a></li>
 				</ul>
 			
 
 		      <Route exact={true} path="/" component={story} />
 		      <Route path="/menu/" component={menu} />
 		      <Route path="/reservation/" component={reservation} />
+		      <Route path="/news/" component={news} />
 
 		      </div>
 		    
