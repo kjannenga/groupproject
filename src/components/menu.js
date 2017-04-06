@@ -1,6 +1,7 @@
 import React from 'react';
 import {getMenu} from '../api/jsonData';
 import store from '../api/store/myprojStore'
+import menu from './menu.css'
 
 
 export default React.createClass({
@@ -9,9 +10,7 @@ export default React.createClass({
 			appetizers: [],
 			entrees: [],
 			sides: []
-			
 		}
-
 	},
 
 	componentWillMount(){
@@ -31,78 +30,116 @@ export default React.createClass({
 	},
 
 	render(){
-		
 		return(
 			<div className="menu">
-				<p>Our Dinner Selection</p>
+				<div className="dinnerSel">
+					<p >Our Dinner Selection</p>
+				</div>
 				<div className="hrule"></div>
-				<h2>APPETIZERS</h2>
+				<div className="appsTitle"><p>APPETIZERS</p></div>
 				<div className="hrApps"></div>
 				<div className="appetizers">
 					{this.state.appetizers.map(app=>(
-					<div>
-					<div key={'app' + app.id}>
-						<p className="appName">{app.item}</p>
-						<p className="appPrice">{app.price}</p>
-						<p className="appDescription">{app.description}</p>
+					<div key={'app' + app.id} className="appetizers">
+					<div className="appList" >
+						<ul>
+							<li>
+								<div className="titlePrice">
+								<div className="appName"><h3>{app.item}</h3></div>
+								<div className="appTitle"><p className="appPrice">{app.price}</p></div>
+								</div>
+								
+							</li>
+						</ul>
 					</div>
-					<div className="vRuleApps"></div>
-						<div className="infoBlocks">
-							<ul>
-								<li>MM</li>
-								<li>MM</li>
-								<li>MM</li>
-								<li>MM</li>
-							</ul>
+						<div className="rightSideMenu">
+							<div className="appDescription"><p 
+							>{app.description}</p></div>
+							<div className="vertRuleApps"></div>
+							<div className="infoBlocks">
+								<ul>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 					
 					))}
 				</div>
 
-				<h2>ENTREES</h2>
+				
 				<div className="hrEntres"></div>
-				<div className="entrees">
-					
-						{this.state.entrees.map(entree=>(
-						<div>
-						<div key={'entr' + entree.id}>
-							<p className="entName">{entree.price}</p>
-							<p className="entDescription">{entree.description}</p>
-						</div>
-						<div className="vRuleEntrees"></div>
-							<div className="infoBlocksApp">
+				<div className="entreeTitle"><p>ENTREES</p></div>
+				<div className="hrApps"></div>
+				<div >
+					{this.state.entrees.map(entree=>(
+					<div key={'entree' + entree.id} className="entrees">
+					<div className="appList" >
+						<ul>
+							<li>
+								<div className="titlePrice">
+								<div className="appName"><h3>{entree.item}</h3></div>
+								<div className="appTitle"><p className="appPrice">{entree.price}</p></div>
+								</div>
+								
+							</li>
+						</ul>
+					</div>
+						<div className="rightSideMenu">
+							<div className="appDescription"><p 
+							>{entree.description}</p></div>
+							<div className="vertRuleApps"></div>
+							<div className="infoBlocks">
 								<ul>
-									<li>MM</li>
-									<li>MM</li>
-									<li>MM</li>
-									<li>MM</li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
 								</ul>
 							</div>
 						</div>
+					</div>
+					
 					))}
 				</div>
 
-				<h2>SIDES</h2>
+				<div className="sidesTitle"><p>SIDES</p></div>
 				<div className="hrSides"></div>
-				<div className="sides">
+				<div >
 					{this.state.sides.map(side=>(
-					<div>
-						<div key={'side' + side.id}>
-							<p className="sideName">{side.item}</p>
-							<p className="sideName">{side.price}</p>
-							<p className="sideDescription">{side.description}</p>
+					<div key={'side' + side.id} className="sides">
+					<div className="appList" >
+						<ul>
+							<li>
+								<div className="titlePrice">
+								<div className="sidesName"><h3>{side.item}</h3></div>
+								<div className="vertRuleSides"></div>
+
+								<div className="appTitle"><p className="appPrice">{side.price}</p></div>
+								</div>			
+							</li>
+
+						</ul>
+					</div>
+						<div className="rightSideMenu">
+
+							<div className="appDescription"><p 
+							>{side.description}</p></div>
+							
+							
 						</div>
-						<div className="vRuleEntrees"></div>
-							<div className="infoBlocksApp">
+						<div className="sideInfoBlocks">
 								<ul>
-									<li>MM</li>
-									<li>MM</li>
-									<li>MM</li>
-									<li>MM</li>
+									<li></li>
+									<li></li>
+									<li></li>
+									<li></li>
 								</ul>
 							</div>
-						</div>
+					</div>
 					
 					))}
 				</div>

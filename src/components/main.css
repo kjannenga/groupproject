@@ -1,0 +1,85 @@
+html {
+box-sizing:border-box;
+}
+*, *:before, *:after {
+box-sizing:inherit;
+}
+.logo {
+	display:block;
+	margin:0 auto;
+	height:auto;
+	padding-top:20px;
+
+}
+
+.navBar {
+	margin:auto;
+	height:auto;
+	padding-top: 30px;
+	padding-bottom:20px;
+}
+
+.navBar ul {
+margin:0 auto;
+display:flex;
+justify-content:space-around;
+text-decoration:none;
+
+}
+
+.navBar a {
+	color: green;
+	text-decoration:none;
+}
+
+.navBar li {
+	text-align: center;
+	margin-right: 20px;
+	list-style-type: none;
+	float:left;
+}
+
+.responsive {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	background-size: contain;
+	padding-top:20px;
+}
+
+.mainImage {
+	display:block;
+	margin:0 auto;
+	height:auto;
+}
+
+.mainContainer {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	border:1px solid green;
+	margin-top:20px;
+}
+
+.twoColumn {
+	display: flex;
+	position: relative;
+	width: 100%;
+	border:1px solid green;
+	margin-top:20px;
+}
+
+#apiDivs {
+	margin-top:20px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap: wrap;
+	width:70%;
+	float:left;
+}
+
+.staticDivs {
+margin-top: 20px;
+float:right;
+flex-display:column;
+}

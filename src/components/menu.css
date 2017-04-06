@@ -1,0 +1,230 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+li{
+	list-style: none; 
+}
+
+.menu{
+	display: flex; 
+	flex-wrap:wrap;
+	width:700px; 
+	border:3px solid red;
+}
+
+.dinnerSel{
+	width:100%; 
+	margin-left:40px;
+}
+
+.dinnerSel>p{
+	font-size: 20px;
+}
+
+.appsTitle>p{
+	font-size: 19px;
+	margin-left:40px;
+}
+
+.hrule{
+	margin: auto;
+	border: 1px solid black;
+	width: 94%; 
+	height: 10px; 
+}
+
+.titlePrice{
+	justify-content: space-between;
+	margin-right: 35px;
+	width: 600px;
+}
+
+.hrApps{
+	margin: auto;
+	margin-bottom: 28px;
+	border-bottom: 1px solid black; 
+	width: 94%;
+}
+
+.appTitle{
+	float:right;
+	margin-left:20px;
+}
+
+.appPrice{
+	float: right;
+	margin-right: -15px;
+	width: 40%;	
+}
+
+.appetizers{
+	margin-top: -19px;
+}
+
+.appName{
+	width: 304px;
+	float:left;
+}
+
+.titlePrice{
+	display: flex;
+}
+
+.appDescription{
+	width: 510px;
+    margin-left: 40px;
+    margin-top: -40px;
+}
+
+.rightSideMenu{
+	display: flex;
+	flex-direction: row;
+	width: 670px;
+}
+
+.infoBlocks{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 26px;
+    margin-left: 31px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+
+.infoBlocks>ul{
+	display: flex;
+	flex-direction: row;
+	width: 100px;
+	margin-top: -15px;
+
+}
+
+.infoBlocks>ul>li{
+	margin-left: 2px;
+}
+
+.infoBlocks>ul>li:nth-child(1){
+	width: 20px;
+	height: 15px;
+	background:green;
+	}
+
+.infoBlocks>ul>li:nth-child(2){
+	width: 20px;
+	height: 15px;
+	background: red;
+
+	}
+
+.infoBlocks>ul>li:nth-child(3){
+	width: 20px;
+	height: 15px;
+	background:blue;
+	}
+
+.infoBlocks>ul>li:nth-child(4){
+	width: 20px;
+	height:15px;
+	background:purple;
+	}
+.vertRuleApps{
+	border-right: 1px solid black;
+    margin-top: -13px;
+    margin-left: 22px;
+    height: 72px;
+}
+
+.entrees{
+	margin-top: -45px;
+}
+
+.entreeTitle>p{
+	font-size: 19px;
+	margin-left:40px;
+}
+
+.sides{
+	margin-top: -66px;
+}
+
+.sidesTitle>p{
+	font-size: 19px;
+	margin-left:40px;
+}
+
+.hrSides{
+	margin: auto;
+	margin-bottom: 52px;
+	border-bottom: 1px solid black; 
+	width: 94%;
+}
+
+.vertRuleSides{
+	border-right: 1px solid black;
+	margin-top: 18px;
+	/* padding-top: 9px; */
+	margin-left: 82px;
+	height: 37px;
+}
+
+.sidesName{
+	width: 404px;
+	float:left;
+
+}
+
+.sideInfoBlocks{
+    display: flex;
+    float: right;
+    margin-right: 44px;
+    margin-top: -17px;
+    width: 26px;
+    justify-content: space-around;
+}
+
+
+.sideInfoBlocks>ul{
+	display: flex;
+	flex-direction: row;
+	width: 100px;
+	margin-top: -15px;
+
+}
+
+.sideInfoBlocks>ul>li{
+	margin-left: 2px;
+}
+
+.sideInfoBlocks>ul>li:nth-child(1){
+	width: 20px;
+	height: 15px;
+	background:green;
+	}
+
+.sideInfoBlocks>ul>li:nth-child(2){
+	width: 20px;
+	height: 15px;
+	background: red;
+
+	}
+
+.sideInfoBlocks>ul>li:nth-child(3){
+	width: 20px;
+	height: 15px;
+	background:blue;
+	}
+
+.sideInfoBlocks>ul>li:nth-child(4){
+	width: 20px;
+	height:15px;
+	background:purple;
+	}
