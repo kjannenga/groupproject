@@ -4,6 +4,9 @@ box-sizing:border-box;
 *, *:before, *:after {
 box-sizing:inherit;
 }
+.header {
+	background:black;
+}
 .logo {
 	display:block;
 	margin:0 auto;
@@ -13,44 +16,54 @@ box-sizing:inherit;
 }
 
 .navBar {
-	margin:auto;
-	height:auto;
-	padding-top: 30px;
+	height:70px;
+	line-height: 70px;
 	padding-bottom:20px;
+	background:#89DA59;
+
 }
 
 .navBar ul {
 margin:0 auto;
+padding:0;
 display:flex;
 justify-content:space-around;
-text-decoration:none;
+
 
 }
 
 .navBar a {
-	color: green;
+	color: white;
+	font-family: 'Open Sans Condensed', sans-serif;
 	text-decoration:none;
+	font-size: 24px;
 }
 
 .navBar li {
 	text-align: center;
-	margin-right: 20px;
 	list-style-type: none;
-	float:left;
+	width:100px;
+
+}
+
+.navBar li:hover {
+	background: #F98866;
+	height:70px;
 }
 
 .responsive {
 	display: inline-block;
 	position: relative;
 	width: 100%;
-	background-size: contain;
-	padding-top:20px;
 }
 
-.mainImage {
+div.mainImage {
 	display:block;
-	margin:0 auto;
-	height:auto;
+	content: url(https://cdn0.vox-cdn.com/uploads/chorus_image/image/50580067/2015-06-18-cassia-007.0.0.jpg); 
+	background-size:cover;
+	height:300px;
+	width:100%;
+
 }
 
 .mainContainer {
@@ -58,27 +71,61 @@ text-decoration:none;
 	position: relative;
 	width: 100%;
 	border:1px solid green;
-	margin-top:20px;
+	/*margin-top:20px;*/
 }
 
-.twoColumn {
-	display: flex;
+
+#apiDivs {
+	margin-top:20px;
+	display:flex;
+	justify-content:space-between;
+	flex-wrap: wrap;
+	align-content: center;
+	width:70%;
+	float:left;
+}
+.specialsDiv {
+	width:250px;
+	height:161px;
+	border:1px solid black;
+}
+.newsApi {
+	width:250px;
+	height:161px;
+	border:1px solid black;
+
+}
+.container2 {
+	display: inline-block;
 	position: relative;
 	width: 100%;
 	border:1px solid green;
 	margin-top:20px;
 }
 
-#apiDivs {
-	margin-top:20px;
-	display:flex;
-	justify-content:space-around;
-	flex-wrap: wrap;
-	width:70%;
+.menu {
 	float:left;
+
 }
 
 .staticDivs {
+margin-top: 20px;
+float:right;
+flex-display:column;
+}
+
+.testimonials {
+	width:100%
+	height:auto;
+	display:flex;
+	justify-content: space-around;
+}
+
+.custTest {
+	height:200px;
+	width:200px;
+}
+
 margin-top: 20px;
 float:right;
 flex-display:column;
