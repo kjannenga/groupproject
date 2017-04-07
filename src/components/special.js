@@ -28,7 +28,7 @@ export default React.createClass({
   		console.log("special", this.state.special)
 	    return (
 		 	<div id="specialDiv">
-		 		<h3>Daily Specials</h3>
+		 		<h2>Daily Specials</h2>
 		 		<p>{this.state.special.id}</p>
 		 		<p>{this.state.special.menu_item_id}</p> 
 		 		<img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSLvRU15SW2qjYQ1-grpdytlKtDFpntMgOw8r9KxAvGDN5jYN2b" alt="Green Shake" width="150" height="130" />

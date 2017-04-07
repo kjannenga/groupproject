@@ -58,3 +58,38 @@ justify-content:space-around;
 		background-position:right center;
 }
 
+.apiDivs{
+	padding:5px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: black;
+
+
+}
+.newsDiv{
+	width:30%;
+	background-color:black;
+	color:white;
+	overflow:auto;
+}
+
+.specialDiv{
+	width:30%;
+	background-color:black;
+	color:white;
+
+}
+
+.mapDiv{
+	width:30%;
+	height:100px;
+	background-color:green;
+}
+
+#map {
+	width:100%;
+	height:396px;
+	overflow:auto;
+}
+

@@ -33,7 +33,7 @@ export default React.createClass({
   	// console.log("news", this.state.news)
     	return (
 	    	<div id="news">
-	    	 	<p>{this.state.news.title}</p>
+	    	 	<p><h2>{this.state.news.title}</h2></p>
 	    	 	<p>{this.state.news.post}</p>
 	    	 	<p>{this.state.news.date_published}</p>
 	                  
