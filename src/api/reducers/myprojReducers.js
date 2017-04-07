@@ -10,6 +10,7 @@ export function restaurantReducer(state = Initialstate, action) {
 	switch(action.type){
 	case 'GET_DATA':
 		return {
+			...state,
 			appetizers: action.menu.appetizers,
 			entrees: action.menu.entrees,
 			sides: action.menu.sides
