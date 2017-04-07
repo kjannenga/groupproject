@@ -5,21 +5,26 @@ box-sizing:border-box;
 box-sizing:inherit;
 }
 .header {
-	background:black;
+	background:transparent;
 }
 .logo {
 	display:block;
 	margin:0 auto;
-	height:auto;
-	padding-top:20px;
+	height:200px;
 
 }
 
+.pages {
+
+	float:left;
+	height:auto;
+	width:45%;
+}
 .navBar {
-	height:70px;
-	line-height: 70px;
-	padding-bottom:20px;
-	background:#89DA59;
+    height:70px;
+    line-height: 70px;
+    padding-bottom:20px;
+    background:#89DA59 ;
 
 }
 
@@ -31,102 +36,31 @@ justify-content:space-around;
 
 
 }
-
 .navBar a {
-	color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
-	text-decoration:none;
-	font-size: 24px;
+    color: white;
+    text-decoration:none;
+    font-size: 24px;
 }
-
-.navBar li {
-	text-align: center;
-	list-style-type: none;
-	width:100px;
-
-}
-
 .navBar li:hover {
-	background: #F98866;
-	height:70px;
+    background: #ccc ;
+    height:70px;
+    width:200px;
+    text-align:center;
 }
-
-.responsive {
-	display: inline-block;
-	position: relative;
-	width: 100%;
-}
-
-div.mainImage {
-	display:block;
-	content: url(https://cdn0.vox-cdn.com/uploads/chorus_image/image/50580067/2015-06-18-cassia-007.0.0.jpg); 
-	background-size:cover;
-	height:300px;
+.insideImg{
 	width:100%;
-
-}
-
-.mainContainer {
-	display: inline-block;
-	position: relative;
-	width: 100%;
-	border:1px solid green;
-	/*margin-top:20px;*/
+	height:400px;
+	background-image: url("https://cdn3.vox-cdn.com/uploads/chorus_asset/file/7843291/2016_12_15_MarVista_006.0.jpg");
+		background-position:right center;
 }
 
 
-#apiDivs {
-	margin-top:20px;
-	display:flex;
-	justify-content:space-between;
-	flex-wrap: wrap;
-	align-content: center;
-	width:70%;
-	float:left;
-}
-.specialsDiv {
-	width:250px;
-	height:161px;
-	border:1px solid black;
-}
-.newsApi {
-	width:250px;
-	height:161px;
-	border:1px solid black;
 
-}
-.container2 {
-	display: inline-block;
-	position: relative;
-	width: 100%;
-	border:1px solid green;
-	margin-top:20px;
-}
 
-.menu {
-	float:left;
 
-}
 
-.staticDivs {
-margin-top: 20px;
-float:right;
-flex-display:column;
-}
 
-.testimonials {
-	width:100%
-	height:auto;
-	display:flex;
-	justify-content: space-around;
-}
 
-.custTest {
-	height:200px;
-	width:200px;
-}
 
-margin-top: 20px;
-float:right;
-flex-display:column;
-}
+
+
