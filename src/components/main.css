@@ -1,5 +1,6 @@
 html {
 box-sizing:border-box;
+font-family: 'Open Sans Condensed', sans-serif;
 }
 *, *:before, *:after {
 box-sizing:inherit;
@@ -34,7 +35,6 @@ justify-content:space-around;
 
 .navBar a {
 	color: white;
-	font-family: 'Open Sans Condensed', sans-serif;
 	text-decoration:none;
 	font-size: 24px;
 }
@@ -85,16 +85,23 @@ div.mainImage {
 	flex-direction: row;
 
 }
-.specialsDiv {
-	width:32%;
-	height:300px;
 
+h3 {
+	color: white;
 }
-.newsApi {
+#specialDiv {
 	width:32%;
 	height:300px;
+	color:white;
+	overflow: auto;
+	text-align: center;
+}
+#news {
+	width:32%;
+	height:300px;
+	color:white;
+	overflow:auto;
 	
-
 }
 
 .locationsDiv {
@@ -105,25 +112,30 @@ div.mainImage {
 	height:300px;
 }
 .container2 {
-	display: inline-block;
-	position: relative;
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
 	margin-top:20px;
-	font-family: 'Open Sans Condensed', sans-serif;
 	background: #ccc;
 }
 
-.menu {
-	float:left;
+#menu {
+	width: 45%;
+	height: auto;
+}
 
+#reservations {
+	width: 45%;
+	height: auto;
+}
 
+.reservations input{
+	width: 80%;
 }
 
 .staticDivs {
 margin-top: 20px;
-float:right;
-flex-display:column;
-font-family: 'Open Sans Condensed', sans-serif;
+
 }
 
 .img1 {
@@ -153,8 +165,6 @@ font-family: 'Open Sans Condensed', sans-serif;
 .testimonials {
 	width:100%;
 	height:auto;
-	display:flex;
-	justify-content: space-around;
 	background: black;
 
 }
@@ -162,10 +172,15 @@ font-family: 'Open Sans Condensed', sans-serif;
 	background:#ccc;
 }
 
+.testDiv {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
 .custTest {
 	height:200px;
 	width:200px;
-	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .testTextDiv {
@@ -179,7 +194,6 @@ font-family: 'Open Sans Condensed', sans-serif;
 .customers {
 	width:200px;
 	height:200px;
-	font-family: 'Open Sans Condensed', sans-serif;
 	color:white;
 
 }
