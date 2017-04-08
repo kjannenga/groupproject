@@ -1,5 +1,20 @@
 import React from 'react';
 
+
+
+
+const styles = {
+
+ image:{
+   width:"100%",
+  }
+}
+
+
+
+
+
+
 export default React.createClass({
   render() {
     return (
@@ -9,7 +24,7 @@ export default React.createClass({
 			Maecenas a hendrerit ipsum. Nullam venenatis sagittis massa quis luctus. Curabitur in libero nunc. Nam ullamcorper lobortis dui nec ultrices. Praesent eu erat posuere, vestibulum risus eu, tincidunt enim. Phasellus euismod bibendum urna. Phasellus massa libero, tempus ut vulputate sed, gravida vitae leo. In aliquam fringilla eros non tempor. In id odio vel dolor bibendum mollis et nec purus. Ut laoreet odio vel fermentum imperdiet. Proin sed turpis velit. Suspendisse ullamcorper condimentum lorem, sed interdum tortor tincidunt sed.
 			</p>
 
-			<img src="http://il9.picdn.net/shutterstock/videos/10117007/thumb/2.jpg" alt="touching grass" id="touchgrass" />
+			<img style={styles.image} src="http://il9.picdn.net/shutterstock/videos/10117007/thumb/2.jpg" alt="touching grass" id="touchgrass" />
 
 			<p>Ut luctus mauris ut mi euismod auctor. Sed id lorem efficitur, eleifend neque ut, lacinia ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam finibus consectetur dui id ultricies. Nunc tristique fringilla leo nec dapibus. Nam sit amet urna neque. Phasellus ut ligula in sem rhoncus consequat. Aenean ac nisi nibh. Morbi non eleifend risus. Fusce et vestibulum nibh. Sed sit amet eros felis.<br/>
 			<br/>

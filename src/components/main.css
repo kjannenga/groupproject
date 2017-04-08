@@ -20,7 +20,7 @@ box-sizing:inherit;
 
 	float:left;
 	height:auto;
-	width:45%;
+	width:60%;
 }
 .navBar {
     height:70px;
@@ -91,5 +91,48 @@ justify-content:space-around;
 	width:100%;
 	height:396px;
 	overflow:auto;
+}
+
+.staticDivs{
+	width:30%;
+	float:right;
+}
+
+.testimonials {
+    width:100%;
+    height:auto;
+
+    
+
+}
+.testHeader {
+    background:#ccc;
+    
+}
+
+.testDiv {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.custTest {
+    height:200px;
+    width:200px;
+}
+
+.testTextDiv {
+    width:100%;
+    height:auto;
+    display:flex;
+    justify-content: space-around;
+    background: black;
+}
+
+.customers {
+    width:200px;
+    height:200px;
+    color:white;
+
 }
 

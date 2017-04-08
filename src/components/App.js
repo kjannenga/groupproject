@@ -41,19 +41,60 @@ export default React.createClass({
 			</div>
 
 
-
-
-
-
-
 			<div className="pages">
-			
-
 		      <Route exact={true} path="/" component={Story} />
 		      <Route path="/menu/" component={Menu} />
 		      <Route path="/Reservations/" component={Reservations} />
+			</div>
 
-		    </div>
+			<div className="staticDivs">
+                    <h3 className="a1Text">Food Photos...</h3>
+                    <div className="img">
+                      <img src="http://images.neverendingvoyage.com/wp-content/uploads/2014/09/harlow-portland-vegan-2.jpg" width="300" height="200" alt="static" />
+                    </div>
+                    <br />
+                    <div className="img2">
+                      <img src="https://previews.123rf.com/images/vilax/vilax1110/vilax111000216/10965505-piece-of-a-pie-from-turf-compost-with-a-green-grass-lies-on-a-plate-Isolated-Stock-Photo.jpg" width="300" height="200" alt="grass" />
+                    </div>
+                    <br />
+                    <div className="img3">
+                      <img src="http://simonebaldwin.com/wp-content/uploads/2013/08/GreenJuice.jpg" width="300" height="200" alt="juice" />
+                    </div>
+            </div>
+
+            <div>
+            	<div className="testHeader">
+                
+            	</div>
+                  <div className="testimonials">
+                      <div className="testDiv">
+                        <img className="custTest" src="https://i.ytimg.com/vi/A11XKY5pFR0/maxresdefault.jpg" alt="foodie" />
+                        <img className="custTest" src="http://data.whicdn.com/images/72387409/superthumb.jpg" alt="green thumb" />
+                        <img className="custTest" src="https://feralbotanicals.files.wordpress.com/2012/03/cleaverkids.jpg" alt="food" />
+                    </div>
+                      <div className="testTextDiv">
+                        <div className="customers">
+                            <h3>"I love grass so much that I have gone from smoking it to eating it (I still smoke it tho). Thanks, Eat My Grass!" - Bridgette, 36 </h3>
+                        </div>
+                        <div className="customers">
+                            <h3>"I’m a vegan. Thanks to Eat My Grass, I can feel content knowing I’m not consuming any animal biproducts. Did I mention that I am a vegan?" - Rachel, 30.</h3>
+                        </div>
+                        <div className="customers">
+                            <h3>"This shit’s fucking gross but my mom said I can’t eat gluten. What the fuck is gluten?" -Billy, 10
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
 
 		    </div>
 		    
