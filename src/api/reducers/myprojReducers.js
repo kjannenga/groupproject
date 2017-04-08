@@ -3,7 +3,8 @@ const Initialstate = {
 	entrees: [],
 	sides: [],
 	news:[],
-	special:[]
+	special:[],
+	res:[]
 }
 
 export function restaurantReducer(state = Initialstate, action) {
@@ -23,9 +24,15 @@ export function restaurantReducer(state = Initialstate, action) {
 		return {
 			...state, special: action.special
 		}
+	case 'GET_USERS':
+		return{
+			...state, res: action.res
+		}
+
 		default:
 			return state
 	}
 
 }
+
 

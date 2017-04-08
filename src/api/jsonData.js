@@ -31,3 +31,25 @@ export function getSpecial(){
 
 	})
 }
+
+
+export function getUsers(){
+	axios.get('http://localhost:3001/users').then(res=>{
+		store.dispatch({
+			type: 'GET_USERS',
+			res: res.data 
+		
+		})
+
+	})
+}
+
+export function addUser(username){
+	axios.post('http://localhost:3001/users', {
+		username, 
+	}).then(res=>
+		getUsers()
+	)
+}
+
+
