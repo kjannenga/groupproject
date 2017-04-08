@@ -23,7 +23,7 @@ export default React.createClass({
 					<ul>
 						<li><a href="/">Story</a></li>
 						<li><a href="menu">Menu</a></li>
-						<li><a href="reservation">Reservations</a></li>
+						<li><a href="Reservations">Reservations</a></li>
 						<li><a href="news">News</a></li>
 						<li><a href="special">Special</a></li>
 					</ul>
@@ -42,7 +42,7 @@ export default React.createClass({
 
 		      <Route exact={true} path="/" component={Story} />
 		      <Route path="/menu/" component={Menu} />
-		      <Route path="/reservations/" component={Reservations} />
+		      <Route path="/Reservations/" component={Reservations} />
 		      <Route path="/news/" component={News} />
 		      <Route path="/special/" component={Special} />
 
