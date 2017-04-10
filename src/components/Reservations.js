@@ -17,7 +17,8 @@ const styles = {
 		width: '100%',
     	marginTop: 27,
     	fontSize: 20,
-    	color: '#ccc'
+    	color: '#ccc',
+    
 	},
 
 	comments:{
@@ -97,6 +98,7 @@ componentWillMount(){
 
 
 			</form>
+			</div>
 		
     )
   }
