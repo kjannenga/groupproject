@@ -21,7 +21,7 @@ box-sizing:inherit;
 .pages {
 
     float: left;
-    width: 63%;
+    width:  66%;
     height: 480px;
     margin-left: 35px;
     margin-top: 31px;
@@ -156,7 +156,7 @@ box-sizing:inherit;
 
 .customers {
     width:200px;
-    height:156pxpx;
+    height:156px;
     color:white;
 }
 

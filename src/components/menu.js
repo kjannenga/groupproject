@@ -2,6 +2,7 @@ import React from 'react';
 import {getMenu} from '../api/jsonData';
 import store from '../api/store/myprojStore'
 import './menu.css'
+import allergy from './images/130006.svg'
 
 var styles = {
 
@@ -28,6 +29,7 @@ export default React.createClass({
             sides: []
         }
     },
+
 
     componentWillMount(){
         this.unsubscribe = store.subscribe(()=>{
@@ -114,8 +116,16 @@ export default React.createClass({
                             <div className="appDescription"><p
                             >{entree.description}</p></div>
                             <div className="vertRuleApps"></div>
-                            
+                            <div className="infoBlocks">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
                         </div>
+                   
                     </div>
                     
                     ))}
