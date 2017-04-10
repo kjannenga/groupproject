@@ -37,6 +37,7 @@
       "id": 9
     },
     {
+<<<<<<< HEAD
       "username": "matt",
       "id": 10
     },
@@ -55,6 +56,14 @@
     {
       "username": "THis",
       "id": 14
+=======
+      "username": "asdfj",
+      "id": 10
+    },
+    {
+      "username": "kjni",
+      "id": 11
+>>>>>>> master
     }
   ]
 }

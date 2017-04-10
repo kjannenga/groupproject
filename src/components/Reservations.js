@@ -2,6 +2,7 @@ import React from 'react';
 import {getUsers} from '../api/jsonData'
 import store from '../api/store/myprojStore'
 import {addUser} from '../api/jsonData'
+import './reservations.css'
 console.log('rightnow',getUsers)
 
 
@@ -67,29 +68,34 @@ componentWillMount(){
   render() {
     return (
 
-    	<div className="res">
-			<form onSubmit={this.handleSubmit} className="reservations">
-				<label style={styles.label} htmlFor="name">Full Name</label>
-				<input style={styles.input} name="username" onChange={this.update} type="text" placeholder="Enter Your Full Name" value={this.state.res.username}/><br />
 
-				<label style={styles.label}  htmlFor="number">Number of Guests</label>
-				<input style={styles.input}  type="text" placeholder="How Many Guests"  id="number" /><br />
+		<form onSubmit={this.handleSubmit} className="reservations">
 
-				<label style={styles.label} htmlFor="date">Date</label>
-				<input style={styles.input} type="date" id="date" /><br />
+			<label style={styles.label}  htmlFor="name">Full Name</label><br/>
+			<input style={styles.input} name="username" onChange={this.update} type="text" placeholder="Name" value={this.state.res.name}/><br />
 
-				<label style={styles.label} htmlFor="notes">Special Notes</label>
-				<textarea style={styles.comments}  placeholder="Questions or Comments"  id="notes"></textarea><br />
+			<label style={styles.label}htmlFor="number">Number of Guests</label><br/>
+			<input style={styles.input} type="text" onChange={this.update} id="number" placeholder="Number" value={this.state.res.number}/><br />
 
-				<label style={styles.label} htmlFor="seats">Seating Preference</label>
-				<select style={styles.input}id="seats">
-				  <option value="indoor">Indoor</option>
-				  <option value="outdoor">Outdoor</option>
-				  <option value="bar">Bar</option>
-				  <option value="first">First Available</option>
-				</select>
+			<label style={styles.label}htmlFor="date">Date</label><br/>
+			<input style={styles.input}type="date" onChange={this.update} id="date" value={this.state.res.date}/><br />
 
-				<button style={styles.button} type="submit">Reserve Table</button>
+			<label style={styles.label}htmlFor="notes">Special Notes</label><br/>
+			<textarea style={styles.comments}  id="notes" onChange={this.update} placeholder="Notes..." value={this.state.res.notes}></textarea><br />
+
+			<label style={styles.label}htmlFor="seats">Seating Preference</label><br/>
+			<select style={styles.input}id="seats" onChange={this.update} value={this.state.res.preference}>
+			  <option value="indoor">Indoor</option>
+			  <option value="outdoor">Outdoor</option>
+			  <option value="bar">Bar</option>
+			  <option value="first">First Available</option>
+			</select>
+
+			<br/>
+			<br/>
+
+			<button style={styles.button} type="submit">Reserve Table</button>
+
 
 			</form>
 		</div>
