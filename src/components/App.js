@@ -8,17 +8,6 @@ import './main.css'
 import Special from './special'
 import Logo from './images/eatmygrass.jpg'
 
-var styles = {
-  // map: {
-  //  borderWidth:1, 
-  //  borderStyle:'solid',
-  //  borderColor:'black',
-
-  // },
-
-
-
-};
 
 
 export default React.createClass({
@@ -47,7 +36,7 @@ export default React.createClass({
 				<div className="newsDiv"><News /></div>
 				<div className="specialDiv"><Special /></div>
 				<div  className="mapDiv">
-					<iframe className="map" style={styles.map} width="400" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=400&amp;height=300&amp;hl=en&amp;q=1112%20S%20Casino%20Center%20Blvd%20Las%20Vegas%2C%20NV%2089104+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" scrolling="no"><a href="http://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html"></a></iframe>
+					<iframe className="map"  width="400" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=400&amp;height=300&amp;hl=en&amp;q=1112%20S%20Casino%20Center%20Blvd%20Las%20Vegas%2C%20NV%2089104+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" scrolling="no"><a href="http://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html"></a></iframe>
 				</div>
 			</div>
 
@@ -73,10 +62,7 @@ export default React.createClass({
                       <img src="http://image.shutterstock.com/display_pic_with_logo/1818128/172446182/stock-photo-wheat-grass-on-a-plate-growing-wheat-grass-172446182.jpg" alt="grass" />
                     </div>
                     <br/>
-                    <br/>
-                    <div className="img4">
-                      <img src="http://veganhop.com/wp-content/uploads/2013/08/P1060322.jpg" width="300" height="200" alt="veggies" />
-                    </div>
+                    
             </div>
 
             <div className="testimonials">
@@ -99,13 +85,13 @@ export default React.createClass({
                 </div>
             </div>
 
-<<<<<<< HEAD
+
 		    </div>
-=======
 
-        </div>
 
->>>>>>> master
+        
+
+
 		    
 		    
 		        

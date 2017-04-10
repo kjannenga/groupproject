@@ -2,7 +2,6 @@ import React from 'react';
 import {getUsers} from '../api/jsonData'
 import store from '../api/store/myprojStore'
 import {addUser} from '../api/jsonData'
-import './reservations.css'
 console.log('rightnow',getUsers)
 
 
@@ -18,7 +17,7 @@ const styles = {
 		width: '100%',
     	marginTop: 27,
     	fontSize: 20,
-    	color: 'white'
+    	color: '#ccc'
 	},
 
 	comments:{
@@ -98,7 +97,7 @@ componentWillMount(){
 
 
 			</form>
-		</div>
+		
     )
   }
 })

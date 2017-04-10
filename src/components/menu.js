@@ -101,6 +101,14 @@ export default React.createClass({
                                 
                             </li>
                         </ul>
+                        <div className="sideInfoBlocks">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
                     </div>
                         <div className="rightSideMenu">
                             <div className="appDescription"><p
