@@ -106,14 +106,7 @@ export default React.createClass({
                             <div className="appDescription"><p
                             >{entree.description}</p></div>
                             <div className="vertRuleApps"></div>
-                            <div className="infoBlocks">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                     

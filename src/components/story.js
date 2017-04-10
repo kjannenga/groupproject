@@ -21,7 +21,7 @@ const styles = {
 
   p:{
   	textIndent: 25,
-  	fontSize:20
+  	fontSize:18
   },
 }
 
