@@ -44,12 +44,12 @@ export function getUsers(){
 	})
 }
 
-export function addName(name){
-	axios.post('http://localhost:3001/users', {
-		name, 
-	}).then(res=>
-		getName()
-	)
-}
+// export function addName(name){
+// 	axios.post('http://localhost:3001/users', {
+// 		name, 
+// 	}).then(res=>
+// 		getName()
+// 	)
+// }
 
 
