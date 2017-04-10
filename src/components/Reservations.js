@@ -68,7 +68,7 @@ componentWillMount(){
   render() {
     return (
 
-
+    	<div className="res">
 		<form onSubmit={this.handleSubmit} className="reservations">
 
 			<label style={styles.label}  htmlFor="name">Full Name</label><br/>

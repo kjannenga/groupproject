@@ -74,9 +74,7 @@ export default React.createClass({
                     </div>
                     <br/>
                     <br/>
-                    <div className="img4">
-                      <img src="http://veganhop.com/wp-content/uploads/2013/08/P1060322.jpg" width="300" height="200" alt="veggies" />
-                    </div>
+                    
             </div>
 
             <div className="testimonials">
@@ -99,13 +97,9 @@ export default React.createClass({
                 </div>
             </div>
 
-<<<<<<< HEAD
+
 		    </div>
-=======
 
-        </div>
-
->>>>>>> master
 		    
 		    
 		        
