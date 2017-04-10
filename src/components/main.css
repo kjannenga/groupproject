@@ -6,9 +6,6 @@ font-family: 'Open Sans Condensed', sans-serif;
 box-sizing:inherit;
 }
 
-.body{
-    background-color: #D3F8CF;
-}
 
 .header {
 	background:white;
@@ -23,22 +20,23 @@ box-sizing:inherit;
 
 .pages {
 
-	float:left;
-	height:auto;
-	width:60%;
-    margin:50px;
-    padding:15px;
-    background-color: white;
-    height:1000px;
-    overflow:auto;
+    float: left;
+    width: 63%;
+    height: 480px;
+    margin-left: 35px;
+    margin-top: 31px;
+    border-radius: 4px;
+    box-shadow: 6px 8px 15px #888888;
+
 }
 
 .navBar {
     height:70px;
     line-height: 70px;
     padding-bottom:20px;
-    background:#54E844;
-
+    background:#9ED2AC ;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .navBar ul {
@@ -47,7 +45,6 @@ box-sizing:inherit;
     display:flex;
     justify-content:space-around;
 
-
 }
 .navBar a {
     color: white;
@@ -55,91 +52,139 @@ box-sizing:inherit;
     font-size: 24px;
 
 }
-.navBar li:hover {
 
-    background: #ccc ;
-    height:70px;
-    width:200px;
-    text-align:center;
+.navBar a:hover {
+     color: #2E8746;
+
 }
+
 .insideImg{
 	width:100%;
 	height:400px;
 	background-image: url("https://cdn3.vox-cdn.com/uploads/chorus_asset/file/7843291/2016_12_15_MarVista_006.0.jpg");
-		background-position:right center;
+	background-position:right center;
+    margin-bottom: 30px;
+    box-shadow: 0px 8px 15px #888888;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }
 
 .apiDivs{
+    height: 368px;
 	padding:5px;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     flex-direction: row;
-    background-color: #ccc;
+    margin-bottom: 25px;
+    border-radius: 3px;
+    border:1px solid #2E8745;
+    
 }
 .newsDiv{
 	width:30%;
-	background-color:#ccc;
+    height: 300px;
 	color:black;
 	overflow:auto;
+    border:0px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 8px 15px #888888;
 }
 
 .specialDiv{
 	width:30%;
-	background-color:#ccc;
+    height: 300px;
 	color:black;
-
+    text-align: center;
+    border-radius: 3px;
+    border:0px solid black;
+    box-shadow: 0px 8px 15px #888888;
 }
 
-.mapDiv{
-	width:30%;
-	height:100px;
-	background-color:green;
-}
-
-#map {
-	width:100%;
-	height:396px;
-	overflow:auto;
-}
 
 .staticDivs{
-	width:30%;
+	width:23%;
+    margin-right: 32px;
+    height: 799px;
 	float:right;
+    text-align: center;
+    border-radius: 3px;
+    border:1px solid #2E8745;
+
+}
+
+.staticDivs img{
+    width: 250px;
+    height: 200px;
+    margin-top: 10px;
+    border: 0px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 8px 15px #888888;
 }
 
 .testimonials {
     width:100%;
-    height:auto;
-    margin-top:30px;
+    height: 1225px;
 }
 .testDiv {
     width: 100%;
+    padding-top: 109px;
     display: flex;
     justify-content: space-around;
-    background-color: white;
+    margin-left: -3px;
 }
 
 .custTest {
-    height:200px;
-    width:200px;
-    margin:15px;
-    border: 3px solid black;
+    height: 100px;
+    width: 100px;
 }
 
+
 .testTextDiv {
-    width:100%;
-    height:auto;
+    width: 92%;
+    margin-left: 52px;
+    height: 150px;
     display:flex;
     justify-content: space-around;
-    background: #ccc;
+    background: #80C492;
+    margin-top: 10px;
+    border-radius: 2px;
+    margin-bottom: 10px;
+    box-shadow: 0px 8px 15px #888888;
 }
 
 .customers {
     width:200px;
-    height:200px;
-    color:black;
-
-
+    height:156pxpx;
+    color:white;
 }
+
+.mapDiv{
+    border:0px solid black;
+    border-radius: 3px;
+    box-shadow: 0px 8px 15px #888888;
+}
+
+.storyDiv, img{
+    border-radius: 2px;
+    box-shadow: 0px 8px 15px #888888;
+}
+
+.reservations{
+    margin-top: 34px;
+    
+}
+
+.res{
+    height: 486px;
+    margin-top: -35px;
+    border-radius: 8px;
+    background: #80C492;
+}
+
+#storyDiv{
+    height: 400px;
+}
+
 
 

@@ -3,6 +3,20 @@ import {getMenu} from '../api/jsonData';
 import store from '../api/store/myprojStore'
 import './menu.css'
 
+var styles = {
+
+titles: {
+    fontSize:25
+    },
+
+dinner:{
+    textAlign:'center',
+    fontSize:40
+}
+
+
+}
+
 
 
 
@@ -34,11 +48,11 @@ export default React.createClass({
     render(){
         return(
             <div className="menu">
-                <div className="dinnerSel">
-                    <p >Our Dinner Selection</p>
+                <div style={styles.dinner} className="dinnerSel">
+                    <p style={styles.dinner} >Our Dinner Selection</p>
                 </div>
                 <div className="hrule"></div>
-                <div className="appsTitle"><p>APPETIZERS</p></div>
+                <div className="appsTitle"><p style={styles.titles}>APPETIZERS</p></div>
                 <div className="hrApps"></div>
                 <div className="appetizers">
                     {this.state.appetizers.map(app=>(
@@ -72,7 +86,7 @@ export default React.createClass({
                     ))}
                 </div>
                 <div className="hrEntres"></div>
-                <div className="entreeTitle"><p>ENTREES</p></div>
+                <div className="entreeTitle"><p style={styles.titles}>ENTREES</p></div>
                 <div className="hrApps"></div>
                 <div >
                     {this.state.entrees.map(entree=>(
@@ -92,21 +106,14 @@ export default React.createClass({
                             <div className="appDescription"><p
                             >{entree.description}</p></div>
                             <div className="vertRuleApps"></div>
-                            <div className="infoBlocks">
-                                <ul>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                    <li></li>
-                                </ul>
-                            </div>
+                            
                         </div>
                     </div>
                     
                     ))}
                 </div>
 
-                <div className="sidesTitle"><p>SIDES</p></div>
+                <div className="sidesTitle"><p style={styles.titles}>SIDES</p></div>
                 <div className="hrSides"></div>
                 <div >
                     {this.state.sides.map(side=>(

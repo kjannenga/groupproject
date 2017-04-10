@@ -13,11 +13,26 @@ li{
 }
 
 .menu{
+<<<<<<< HEAD
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: #AFDDBB;;
+    color: white;
+    width: 100%;
+    height: 754px;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 0px 8px 15px #888888;
+=======
 	display: flex; 
 	flex-wrap:wrap;
 	width:700px; 
 	align-self: center;
 
+>>>>>>> master
 }
 
 .dinnerSel{
@@ -44,7 +59,7 @@ li{
 .titlePrice{
 	justify-content: space-between;
 	margin-right: 35px;
-	width: 600px;
+	width: 790px;
 }
 
 .hrApps{
@@ -79,7 +94,7 @@ li{
 }
 
 .appDescription{
-	width: 510px;
+	width: 700px;
     margin-left: 40px;
     margin-top: -40px;
 }
@@ -87,10 +102,10 @@ li{
 .rightSideMenu{
 	display: flex;
 	flex-direction: row;
-	width: 670px;
+	width: 821px;
 }
 
-.infoBlocks{
+/*.infoBlocks{
 	display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -136,7 +151,7 @@ li{
 	width: 20px;
 	height:15px;
 	background:purple;
-	}
+	}*/
 .vertRuleApps{
 	border-right: 1px solid black;
     margin-top: -13px;
@@ -178,12 +193,12 @@ li{
 }
 
 .sidesName{
-	width: 404px;
+	width: 600px;
 	float:left;
 
 }
 
-.sideInfoBlocks{
+/*.sideInfoBlocks{
     display: flex;
     float: right;
     margin-right: 44px;
@@ -203,9 +218,9 @@ li{
 
 .sideInfoBlocks>ul>li{
 	margin-left: 2px;
-}
+}*/
 
-.sideInfoBlocks>ul>li:nth-child(1){
+/*.sideInfoBlocks>ul>li:nth-child(1){
 	width: 20px;
 	height: 15px;
 	background:green;
@@ -228,4 +243,4 @@ li{
 	width: 20px;
 	height:15px;
 	background:purple;
-	}
+	}*/

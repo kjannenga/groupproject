@@ -6,6 +6,37 @@ import './reservations.css'
 console.log('rightnow',getUsers)
 
 
+const styles = {
+	input:{
+		width:"100%", 
+		height:30,
+		marginTop:10,
+		background:'#DAF1E0'
+	}, 
+
+	label:{
+		width: '100%',
+    	marginTop: 27,
+    	fontSize: 20,
+    	color: 'white'
+	},
+
+	comments:{
+		height:60,
+		width:'100%',
+		background:'#DAF1E0'	
+	},
+
+	button:{
+		width: 140,
+    	height: 30,
+    	marginTop:20,
+    	background:'#DAF1E0',
+    	borderRadius:5
+	},
+}
+
+
 export default React.createClass({
 	getInitialState(){
         return{
@@ -37,22 +68,23 @@ componentWillMount(){
   render() {
     return (
 
+
 		<form onSubmit={this.handleSubmit} className="reservations">
 
-			<label htmlFor="name">Full Name</label><br/>
-			<input name="username" onChange={this.update} type="text" placeholder="Name" value={this.state.res.name}/><br />
+			<label style={styles.label}  htmlFor="name">Full Name</label><br/>
+			<input style={styles.input} name="username" onChange={this.update} type="text" placeholder="Name" value={this.state.res.name}/><br />
 
-			<label htmlFor="number">Number of Guests</label><br/>
-			<input type="text" onChange={this.update} id="number" placeholder="Number" value={this.state.res.number}/><br />
+			<label style={styles.label}htmlFor="number">Number of Guests</label><br/>
+			<input style={styles.input} type="text" onChange={this.update} id="number" placeholder="Number" value={this.state.res.number}/><br />
 
-			<label htmlFor="date">Date</label><br/>
-			<input type="date" onChange={this.update} id="date" value={this.state.res.date}/><br />
+			<label style={styles.label}htmlFor="date">Date</label><br/>
+			<input style={styles.input}type="date" onChange={this.update} id="date" value={this.state.res.date}/><br />
 
-			<label htmlFor="notes">Special Notes</label><br/>
-			<textarea id="notes" onChange={this.update} placeholder="Notes..." value={this.state.res.notes}></textarea><br />
+			<label style={styles.label}htmlFor="notes">Special Notes</label><br/>
+			<textarea style={styles.comments}  id="notes" onChange={this.update} placeholder="Notes..." value={this.state.res.notes}></textarea><br />
 
-			<label htmlFor="seats">Seating Preference</label><br/>
-			<select id="seats" onChange={this.update} value={this.state.res.preference}>
+			<label style={styles.label}htmlFor="seats">Seating Preference</label><br/>
+			<select style={styles.input}id="seats" onChange={this.update} value={this.state.res.preference}>
 			  <option value="indoor">Indoor</option>
 			  <option value="outdoor">Outdoor</option>
 			  <option value="bar">Bar</option>
@@ -62,11 +94,11 @@ componentWillMount(){
 			<br/>
 			<br/>
 
-			<button type="submit">Reserve Table</button>
+			<button style={styles.button} type="submit">Reserve Table</button>
 
-			
 
-		</form>
+			</form>
+		</div>
     )
   }
 })
