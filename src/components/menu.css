@@ -97,7 +97,7 @@ li{
 	width: 821px;
 }
 
-/*.infoBlocks{
+.infoBlocks{
 	display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -123,27 +123,35 @@ li{
 .infoBlocks>ul>li:nth-child(1){
 	width: 20px;
 	height: 15px;
-	background:green;
+	background-image: url("./images/129993.svg");
+	background-size: 13px;
+	background-repeat: no-repeat;
 	}
 
 .infoBlocks>ul>li:nth-child(2){
 	width: 20px;
 	height: 15px;
-	background: red;
+	background-image: url("./images/130006.svg");
+	background-size: 13px;
+	background-repeat: no-repeat;
 
 	}
 
 .infoBlocks>ul>li:nth-child(3){
 	width: 20px;
 	height: 15px;
-	background:blue;
+	background-image: url("./images/chili.svg");
+	background-size: 13px;
+	background-repeat: no-repeat;
 	}
 
 .infoBlocks>ul>li:nth-child(4){
 	width: 20px;
 	height:15px;
-	background:purple;
-	}*/
+	background-image: url("./images/vegan.svg");
+	background-size: 13px;
+	background-repeat: no-repeat;
+	}
 .vertRuleApps{
 	border-right: 1px solid black;
     margin-top: -13px;
@@ -190,7 +198,7 @@ li{
 
 }
 
-/*.sideInfoBlocks{
+.sideInfoBlocks{
     display: flex;
     float: right;
     margin-right: 44px;
@@ -210,29 +218,33 @@ li{
 
 .sideInfoBlocks>ul>li{
 	margin-left: 2px;
-}*/
+}
 
-/*.sideInfoBlocks>ul>li:nth-child(1){
+.sideInfoBlocks>ul>li:nth-child(1){
 	width: 20px;
 	height: 15px;
-	background:green;
+	background-image: url("./images/129993.svg");
+	background-repeat: no-repeat;
 	}
 
 .sideInfoBlocks>ul>li:nth-child(2){
 	width: 20px;
 	height: 15px;
-	background: red;
+	background-image: url("./images/130006.svg");
+	background-repeat: no-repeat;
 
 	}
 
 .sideInfoBlocks>ul>li:nth-child(3){
 	width: 20px;
 	height: 15px;
-	background:blue;
+	background-image: url("./images/chili.svg");
+	background-repeat: no-repeat;
 	}
 
 .sideInfoBlocks>ul>li:nth-child(4){
 	width: 20px;
 	height:15px;
-	background:purple;
-	}*/
+	background-image: url("./images/vegan.svg");
+	background-repeat: no-repeat;
+	}
