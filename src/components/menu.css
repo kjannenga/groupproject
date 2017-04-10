@@ -13,10 +13,18 @@ li{
 }
 
 .menu{
-	display: flex; 
-	flex-wrap:wrap;
-	width:700px; 
-	border:3px solid red;
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    background: #AFDDBB;;
+    color: white;
+    width: 100%;
+    height: 754px;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-shadow: 0px 8px 15px #888888;
 }
 
 .dinnerSel{
@@ -43,7 +51,7 @@ li{
 .titlePrice{
 	justify-content: space-between;
 	margin-right: 35px;
-	width: 600px;
+	width: 790px;
 }
 
 .hrApps{
@@ -78,7 +86,7 @@ li{
 }
 
 .appDescription{
-	width: 510px;
+	width: 700px;
     margin-left: 40px;
     margin-top: -40px;
 }
@@ -86,7 +94,7 @@ li{
 .rightSideMenu{
 	display: flex;
 	flex-direction: row;
-	width: 670px;
+	width: 821px;
 }
 
 .infoBlocks{
@@ -177,7 +185,7 @@ li{
 }
 
 .sidesName{
-	width: 404px;
+	width: 600px;
 	float:left;
 
 }

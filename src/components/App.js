@@ -8,6 +8,18 @@ import './main.css'
 import Special from './special'
 import Logo from './images/eatmygrass.jpg'
 
+var styles = {
+  // map: {
+  //  borderWidth:1, 
+  //  borderStyle:'solid',
+  //  borderColor:'black',
+
+  // },
+
+
+
+};
+
 
 export default React.createClass({
 
@@ -23,29 +35,23 @@ export default React.createClass({
 					<ul>
 						<li><a href="/">Story</a></li>
 						<li><a href="menu">Menu</a></li>
-
-					
-						
-
 						<li><a href="Reservations">Reservations</a></li>
-						<li><a href="news">News</a></li>
-						<li><a href="special">Special</a></li>
 
 					</ul>
 				</div>
 				<div className="insideImg"></div>
-				
+				 
 			</div>
 			<div className="apiDivs">
 				<div className="newsDiv"><News /></div>
 				<div className="specialDiv"><Special /></div>
-				<div className="mapDiv">
-					<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3221.3355902079024!2d-115.15467894947072!3d36.158387479988036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c8c39ab244a1cb%3A0xd0b332727ed859dc!2s1112+S+Casino+Center+Blvd%2C+Las+Vegas%2C+NV+89104!5e0!3m2!1sen!2sus!4v1446084095351">
-					</iframe>
+				<div  className="mapDiv">
+					<iframe className="map" style={styles.map} width="400" height="300" src="http://www.citymaps.ie/create-google-map/map.php?width=400&amp;height=300&amp;hl=en&amp;q=1112%20S%20Casino%20Center%20Blvd%20Las%20Vegas%2C%20NV%2089104+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=A&amp;output=embed" scrolling="no"><a href="http://www.mapsdirections.info/fr/mesurer-distance-surface-google-maps.html"></a></iframe>
 				</div>
 
 			</div>
 
+			
 
 			<div className="pages">
 		      <Route exact={true} path="/" component={Story} />
@@ -55,16 +61,16 @@ export default React.createClass({
 
 			<div className="staticDivs">
                     <h3 className="a1Text">Food Photos...</h3>
-                    <div className="img">
-                      <img src="http://images.neverendingvoyage.com/wp-content/uploads/2014/09/harlow-portland-vegan-2.jpg" width="300" height="200" alt="static" />
+                    <div className="img1">
+                      <img src="http://images.neverendingvoyage.com/wp-content/uploads/2014/09/harlow-portland-vegan-2.jpg"  alt="static" />
                     </div>
                     <br />
                     <div className="img2">
-                      <img src="https://previews.123rf.com/images/vilax/vilax1110/vilax111000216/10965505-piece-of-a-pie-from-turf-compost-with-a-green-grass-lies-on-a-plate-Isolated-Stock-Photo.jpg" width="300" height="200" alt="grass" />
+                    <img src="http://simonebaldwin.com/wp-content/uploads/2013/08/GreenJuice.jpg"  alt="juice" />
                     </div>
                     <br />
                     <div className="img3">
-                      <img src="http://simonebaldwin.com/wp-content/uploads/2013/08/GreenJuice.jpg" width="300" height="200" alt="juice" />
+                      <img src="http://image.shutterstock.com/display_pic_with_logo/1818128/172446182/stock-photo-wheat-grass-on-a-plate-growing-wheat-grass-172446182.jpg" alt="grass" />
                     </div>
             </div>
 
@@ -92,23 +98,6 @@ export default React.createClass({
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-		      <Route exact={true} path="/" component={Story} />
-		      <Route path="/menu/" component={Menu} />
-		      <Route path="/Reservations/" component={Reservations} />
-		      <Route path="/news/" component={News} />
-		      <Route path="/special/" component={Special} />
-
-
 
 		    </div>
 		    
