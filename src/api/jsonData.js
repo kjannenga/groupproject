@@ -44,6 +44,7 @@ export function getUsers(){
 	})
 }
 
+<<<<<<< HEAD
 export function addUser(username){
 	axios.post('http://localhost:3001/users', {
 		username, 
@@ -51,5 +52,14 @@ export function addUser(username){
 		getUsers()
 	)
 }
+=======
+// export function addName(name){
+// 	axios.post('http://localhost:3001/users', {
+// 		name, 
+// 	}).then(res=>
+// 		getName()
+// 	)
+// }
+>>>>>>> 585090ab1997face2eef5fa17056178bb663e700
 
 

@@ -61,7 +61,7 @@ export default React.createClass({
                     <div className="img3">
                       <img src="http://image.shutterstock.com/display_pic_with_logo/1818128/172446182/stock-photo-wheat-grass-on-a-plate-growing-wheat-grass-172446182.jpg" alt="grass" />
                     </div>
-                    <br/>
+                    
                     
             </div>
 
@@ -84,6 +84,7 @@ export default React.createClass({
                     </div>
                 </div>
             </div>
+
 
 
 		    </div>
