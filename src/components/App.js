@@ -73,13 +73,13 @@ export default React.createClass({
                 </div>
                 <div className="testTextDiv">
                     <div className="customers">
-                        <h3>"I love grass so much that I have gone from smoking it to eating it (I still smoke it tho). Thanks, Eat My Grass!" - Bridgette, 36 </h3>
+                        <h3>"I love this place. Thanks, Eat My Grass!" - Bridgette, 36 </h3>
                     </div>
                     <div className="customers">
-                        <h3>"I’m a vegan. Thanks to Eat My Grass, I can feel content knowing I’m not consuming any animal biproducts. Did I mention that I am a vegan?" - Rachel, 30.</h3>
+                        <h3>"I’m a vegan. Thanks to Eat My Grass, I can feel content knowing I’m eating good food.?" - Rachel, 30.</h3>
                     </div>
                     <div className="customers">
-                        <h3>"This shit’s fucking gross but my mom said I can’t eat gluten. What the fuck is gluten?" -Billy, 10
+                        <h3>"My mom makes me eat it." -Billy, 10
                         </h3>
                     </div>
                 </div>
